@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Wisdom Script';
+    src: url('./fonts/wisdom_script_aj-webfont.woff2') format('woff2'),
+         url('./fonts/wisdom_script_aj-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: url('./fonts/droidserif-italic-webfont.woff2') format('woff2'),
+         url('./fonts/droidserif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('./fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+         url('./fonts/robotoslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #777;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    font-family: 'Wisdom script', sans-serif;
+    font-size: 26px;
+    color: #fed136;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav__link {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    transition: color .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    color: #919191;
+}
+
+            /* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background-image: url('./img/intro-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    z-index: 1;
+}
+
+.intro__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__suptitle {
+    font-family: 'DroidSerif', sans-serif;
+    font-size: 40px;
+}
+
+.intro__title {
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.intro__btn {
+    position: absolute;
+    top: 130%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    background-color: #fed136;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.intro__btn:hover {
+    background-color: #d1a505;
+}
