@@ -41,7 +41,7 @@
 :root {
     --color-primary-black: #222;
     --color-secondary-black: #777;
-    --btn-hover-bg: #d1a505;
+    --color-orange: #d1a505;
     --font-family-droidserif: 'DroidSerif', sans-serif;
     --font-family-robotoslab: 'RobotoSlab', sans-serif;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 .intro__btn:hover {
-    background-color: var(--btn-hover-bg);
+    background-color: var(--color-orange);
 }
 
 /* section */
