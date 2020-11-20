@@ -236,18 +236,15 @@ body {
     margin-bottom: 50px;
 }
 
-.portfolio__item:nth-child(4),
-.portfolio__item:nth-child(5),
-.portfolio__item:nth-child(6) {
+.portfolio__item:not(:first-child) {
     margin-bottom: 0;
-}
+  }
 
 .portfolio__inner {
     background-color: #fff;
 }
 
-.portfolio__img {
-    display: block;
+img {
     max-width: 100%;
     height: auto;
 }
