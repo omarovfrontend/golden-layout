@@ -211,14 +211,16 @@ body {
 }
 
 .services__title,
-.portfolio__title {
+.portfolio__title,
+.about__title {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .services__text,
-.portfolio__text {
+.portfolio__text,
+.about__text {
     font-family: var(--font-family-robotoslab);
     font-size: 14px;
     text-align: center;
@@ -246,7 +248,6 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 .portfolio__info {
@@ -263,4 +264,96 @@ img {
 .portfolio__text {
     font-family: var(--font-family-droidserif);
     color: #737373;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__item {
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.about__item--inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 561px;
+}
+
+.about__content {
+    padding-left: 30px;
+}
+
+.about__content:nth-child(2),
+.about__content:nth-child(4) {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.about__item--right {
+    justify-content: flex-end;
+}
+
+.about__title span {
+    text-transform: uppercase;
+}
+
+.about__text {
+    width: 305px;
+    text-align: left;
+}
+
+.about__title--right,
+.about__text--right {
+    text-align: right;
+}
+
+.about__img {
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+}
+
+.about__img--after {
+    position: relative;
+}
+
+.about__img--after::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: #f1f1f1;
+    top: 98%;
+    left: 50%;
+    z-index: 10;
+}
+
+.about__item--button {
+    display: inline-block;
+    padding: 30px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #fed136;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.our__story--btn {
+    text-align: center;
+}
+
+.about__item--button:hover {
+    background-color: #c99f08;
 }
