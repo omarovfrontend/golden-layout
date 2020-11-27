@@ -319,11 +319,11 @@ img {
     border: 7px solid #f1f1f1;
 }
 
-.about__img--wrapper {
+.about__img-wrapper {
     position: relative;
 }
 
-.about__img--wrapper::after {
+.about__img-wrapper::after {
     content: "";
     position: absolute;
     width: 2px;
