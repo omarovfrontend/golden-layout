@@ -426,3 +426,16 @@ img {
     text-align: center;
     color: var(--color-secondary-black);
 }
+
+/* logos */
+.section--logos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logos-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
