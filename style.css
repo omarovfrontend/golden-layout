@@ -433,8 +433,9 @@ img {
     padding-bottom: 60px;
 }
 
-.logos {
+.logos-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
