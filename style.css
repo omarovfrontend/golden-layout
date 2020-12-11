@@ -439,3 +439,81 @@ img {
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* contact */
+.section--black {
+    background-color: #000;
+    background-image: url(./img/contact_map-img.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 100% 140px;
+    padding-top: 110px;
+    padding-bottom: 115px;
+}
+
+.section--black .section__title {
+    color: #fff;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forms--left {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms--left,
+.forms--right,
+.subscribe-form-name,
+.subscribe-form-email {
+    margin-bottom: 30px;
+}
+
+.subscribe-form-name,
+.subscribe-form-email,
+.subscribe-form-subject,
+.subscribe-form-message {
+    width: 455px;
+    font-family: 'Montserrat', serif;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.subscribe-form-name::placeholder,
+.subscribe-form-email::placeholder,
+.subscribe-form-subject::placeholder,
+.subscribe-form-message::placeholder {
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.subscribe-form-message {
+    height: 240px;
+}
+
+.form-btn {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    padding: 20px 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #fed136;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.form-btn:hover {
+    background-color: var(--color-orange);
+}
