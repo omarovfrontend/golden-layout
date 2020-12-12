@@ -461,46 +461,52 @@ img {
     flex-wrap: wrap;
 }
 
-.forms--left {
+.subscribe-form__left {
     display: flex;
     flex-direction: column;
 }
 
-.forms--left,
-.forms--right,
-.subscribe-form-name,
-.subscribe-form-email {
+.subscribe-form__left,
+.subscribe-form__right,
+.subscribe-form__name,
+.subscribe-form__email {
     margin-bottom: 30px;
 }
 
-.subscribe-form-name,
-.subscribe-form-email,
-.subscribe-form-subject,
-.subscribe-form-message {
+.subscribe-form__name,
+.subscribe-form__email,
+.subscribe-form__subject,
+.subscribe-form__message {
     width: 455px;
     font-family: 'Montserrat', serif;
     padding: 20px;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
+    outline: none;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
 }
 
-.subscribe-form-name::placeholder,
-.subscribe-form-email::placeholder,
-.subscribe-form-subject::placeholder,
-.subscribe-form-message::placeholder {
+.subscribe-form__name:focus,
+.subscribe-form__email:focus,
+.subscribe-form__subject:focus,
+.subscribe-form__message:focus {
+    border-color: #fed136;
+}
+
+.subscribe-form input::placeholder,
+.subscribe-form textarea::placeholder {
     text-transform: uppercase;
     color: #bbb;
 }
 
-.subscribe-form-message {
-    height: 240px;
+.subscribe-form__message {
+    height: 255px;
+    resize: vertical;
 }
 
 .form-btn {
     display: block;
-    text-align: center;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
