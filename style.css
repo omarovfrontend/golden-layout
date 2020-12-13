@@ -536,9 +536,10 @@ img {
     align-items: center;
     width: 60%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.copyright {
+.footer__copyright {
     font-size: 14px;
     color: #555;
 }
