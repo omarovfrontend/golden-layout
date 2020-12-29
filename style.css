@@ -68,7 +68,7 @@ body {
     padding-top: 50px;
 }
 
-.header.fixed {
+.header_fixed {
     padding: 10px 0;
     background-color: #606568;
     position: fixed;
@@ -669,7 +669,6 @@ img {
 
 /* Адаптация */
 @media (max-width: 980px) {
-
     .section {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -738,11 +737,9 @@ img {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 @media (max-width: 900px) {
-
     .intro__suptitle {
         font-size:  32px;
     }
@@ -753,7 +750,6 @@ img {
 }
 
 @media (max-width: 780px) {
-
     .header {
         padding: 20px 0;
     }
@@ -796,7 +792,6 @@ img {
 }
 
 @media (max-width: 680px) {
-
     .header {
         padding: 10px 0;
     }
@@ -896,7 +891,6 @@ img {
 }
 
 @media (max-width: 600px) {
-
     .intro {
         min-height: 500px;
     }
@@ -939,7 +933,10 @@ img {
         margin-bottom: 20px;
     }
 
-    .subscribe-form__name, .subscribe-form__email, .subscribe-form__subject, .subscribe-form__message {
+    .subscribe-form__name,
+    .subscribe-form__email,
+    .subscribe-form__subject,
+    .subscribe-form__message {
         width: 400px;
         font-size: 12px;
         padding: 15px;
@@ -956,7 +953,6 @@ img {
 }
 
 @media (max-width: 540px) {
-
     .intro__suptitle {
         font-size: 22px;
     }
@@ -979,7 +975,6 @@ img {
 }
 
 @media (max-width: 470px) {
-
     .intro__suptitle {
         font-size: 20px;
     }
@@ -1008,14 +1003,16 @@ img {
         margin-bottom: 15px;
     }
 
-    .subscribe-form__name, .subscribe-form__email, .subscribe-form__subject, .subscribe-form__message {
+    .subscribe-form__name,
+    .subscribe-form__email,
+    .subscribe-form__subject,
+    .subscribe-form__message {
         width: 360px;
         font-size: 10px;
     }
 }
 
 @media (max-width: 390px) {
-
     .intro__suptitle {
         font-size: 16px;
     }
@@ -1028,18 +1025,23 @@ img {
         font-size: 25px;
     }
 
-    .subscribe-form__name, .subscribe-form__email, .subscribe-form__subject, .subscribe-form__message {
+    .subscribe-form__name,
+    .subscribe-form__email, 
+    .subscribe-form__subject, 
+    .subscribe-form__message {
         width: 330px;
     }
 }
 
 @media (max-width: 360px) {
-
     .intro__title {
         font-size: 24px;
     }
 
-    .subscribe-form__name, .subscribe-form__email, .subscribe-form__subject, .subscribe-form__message {
+    .subscribe-form__name,
+    .subscribe-form__email, 
+    .subscribe-form__subject, 
+    .subscribe-form__message {
         width: 300px;
     }
 }
