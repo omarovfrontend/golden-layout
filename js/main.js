@@ -42,8 +42,8 @@ $(function() {
     $('#nav-toggle').on('click', function(event) {
         event.preventDefault();
 
-        $(this).toggleClass('nav_active');
-        $('#nav').toggleClass('nav-toggle_active');
+        $(this).toggleClass('nav-toggle_active');
+        $('#nav').toggleClass('nav_active');
     });
 
 });
