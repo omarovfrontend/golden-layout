@@ -231,6 +231,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #3d3b3c;
     color: #fff;
     z-index: 1;
 }
