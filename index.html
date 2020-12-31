@@ -11,22 +11,28 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">Golden</div>
-                <nav class="nav" role="navigation">
-                    <a href="#" class="nav__link">Home</a>
-                    <a href="#" class="nav__link">Services</a>
-                    <a href="#" class="nav__link">Portfolio</a>
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Contact</a>
+                <div class="header__logo" data-scroll="#intro">Golden</div>
+
+                <nav class="nav" id="nav" role="navigation">
+                    <a href="#" class="nav__link nav__link_active" data-scroll="#intro">Home</a>
+                    <a href="#" class="nav__link" data-scroll="#services">Services</a>
+                    <a href="#" class="nav__link" data-scroll="#portfolio">Portfolio</a>
+                    <a href="#" class="nav__link" data-scroll="#about">About</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
                 </nav>
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+
             </div>
         </div>
     </header>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <p class="intro__suptitle">Welcome To Our Studio!</p>
@@ -37,7 +43,7 @@
         </div>
     </div>
 
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Services</h2>
@@ -76,7 +82,7 @@
         </div>
     </section>
 
-    <section class="section section--gray">
+    <section class="section section--gray" id="portfolio">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Our portfolio</h2>
@@ -143,7 +149,7 @@
         </div>
     </section>
 
-    <div class="section">
+    <div class="section" id="about">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">About Us</h2>
@@ -257,7 +263,7 @@
 
             <div class="amazing">
                 <div class="amazing__item">
-                    <img src="https://via.placeholder.com/220/000.png" class="amazing__img" width="220" height="220" alt="Marketer">
+                    <img src="https://dummyimage.com/220x220/000" class="amazing__img" width="220" height="220" alt="Marketer">
                     <h3 class="section-title">Kimberly Thompson</h3>
                     <p class="section-text">Marketer</p>
                     <div class="amazing__social">
@@ -273,7 +279,7 @@
                     </div>
                 </div>
                 <div class="amazing__item">
-                    <img src="https://via.placeholder.com/220/000.png" class="amazing__img" width="220" height="220" alt="Coder">
+                    <img src="https://dummyimage.com/220x220/000" class="amazing__img" width="220" height="220" alt="Coder">
                     <h3 class="section-title">Rico Massimo</h3>
                     <p class="section-text">Coder</p>
                     <div class="amazing__social">
@@ -289,7 +295,7 @@
                     </div>
                 </div>
                 <div class="amazing__item">
-                    <img src="https://via.placeholder.com/220/000.png" class="amazing__img" width="220" height="220" alt="Designer">
+                    <img src="https://dummyimage.com/220x220/000" class="amazing__img" width="220" height="220" alt="Designer">
                     <h3 class="section-title">Uku Mason</h3>
                     <p class="section-text">Graphic Designer</p>
                     <div class="amazing__social">
@@ -331,7 +337,7 @@
         </div>
     </section>
 
-    <section class="section section--black">
+    <section class="section section--black" id="contact">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Contact us</h2>
@@ -378,6 +384,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
