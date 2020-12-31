@@ -1,6 +1,4 @@
 $(function() {
-    let scrollOffset = $(window).scrollTop();
-
     function toggleHeaderClass(scrollOffset) {
         const header = $('#header');
         const introHeight = $('#intro').innerHeight();
@@ -13,11 +11,8 @@ $(function() {
         }
     }
 
-    /* Fixed Header */
-    toggleHeaderClass(scrollOffset);
-
     $(window).on('scroll', function() {
-        scrollOffset = $(this).scrollTop();
+        const scrollOffset = $(this).scrollTop();
 
         toggleHeaderClass(scrollOffset);
     });
