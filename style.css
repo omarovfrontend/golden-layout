@@ -108,7 +108,7 @@ body {
     font-size: 14px;
 }
 
-.nav.active {
+.nav.nav_active {
     display: block;
 }
 
@@ -124,7 +124,7 @@ body {
     margin-left: 0;
 }
 
-.nav__link.active {
+.nav__link.nav__link_active {
     color: #919191;
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .nav__link:hover::after,
-.nav__link.active::after {
+.nav__link.nav__link_active::after {
     opacity: 1;
 }
 
@@ -183,7 +183,7 @@ body {
     transition: background .2s linear;
 }
 
-.nav-toggle.active .nav-toggle__item {
+.nav-toggle.nav-toggle_active .nav-toggle__item {
     background: none;
 }
 
@@ -207,12 +207,12 @@ body {
     bottom: -8px;
 }
 
-.nav-toggle.active .nav-toggle__item::before {
+.nav-toggle.nav-toggle_active .nav-toggle__item::before {
     transform-origin: left top;
     transform: rotate(45deg) translate3D(0px, -3px, 0);
 }
 
-.nav-toggle.active .nav-toggle__item::after {
+.nav-toggle.nav-toggle_active .nav-toggle__item::after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3D(0px, 3px, 0);
 }
